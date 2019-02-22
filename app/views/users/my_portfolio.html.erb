@@ -2,7 +2,7 @@
 
 <h3>Search for Stocks</h3>
 <div id="stock-lookup">
-	<%= form_tag "#", method: :get, id: "stock-lookup-form" do %>
+	<%= form_tag search_stocks_path, method: :get, id: "stock-lookup-form" do %>
 		<div class="form-group row no-padding text-center col-md-12">
 			<div class="col-md-10">
 				<%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true, class: "form-control search-box input-lg" %>
@@ -13,5 +13,11 @@
 				<% end %>
 			</div>
 		</div>
-		<% end %>
-	</div>
+	<% end %>
+</div>
+
+<div class="well results-block">
+	<strong>Symbol: </strong><%=@stock.ticker%>
+	<strong>Name: </strong><%=@stock.name%>
+	<strong>Price: </strong><%=@stock.last_price%>
+</div>
