@@ -20,7 +20,7 @@
 				<th><%= user_stock.ticker %></th>
 				<th><%= user_stock.last_price %></th>
 				<% if @user.id == current_user.id %>
-					<th><%= link_to "Untrack this stock", user_stock_path(user_stock), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %></th>
+					<th><%= link_to "Untrack", user_stock_path(user_stock), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %></th>
 				<% end %>
 			</tr>
 			<% end %>
