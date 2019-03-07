@@ -21,3 +21,7 @@
 .no-padding {
 	padding: 0 !important;
 }
+
+.left-padding {
+	padding: 15 !important;
+}
