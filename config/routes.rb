@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'welcome#index'
   get 'my-portfolio', to: 'users#my_portfolio'
+  get 'my-friends', to: 'users#my_friends'
   get 'search-stocks', to: 'stocks#search'
   resources :user_stocks, only: [:create, :destroy]
 end
