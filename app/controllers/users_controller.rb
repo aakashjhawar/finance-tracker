@@ -9,4 +9,10 @@ class UsersController < ApplicationController
 		@friendships = current_user.friends
 	end
 		
+	def search
+		# puts params[:search_param]
+		@user = User.search(params[:search_param])
+		render json: @user
+	end
+
 end
