@@ -15,6 +15,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require twitter/bootstrap
 
 var init_stock_lookup = function(){
   $('#stock-lookup-form').on('ajax:success', function(event, data, status){
