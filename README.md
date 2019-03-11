@@ -22,7 +22,7 @@ Heroku: https://investry.herokuapp.com/
 Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) installed.
 
 ```sh
-git clone https://github.com/aakashjhawar/finance-tracker.git # or clone your own fork
+git clone https://github.com/aakashjhawar/finance-tracker.git #You can also clone your own fork
 cd finance-tracker
 bundle install
 rails db:create
